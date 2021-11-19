@@ -2,24 +2,31 @@ package com.example.spring;
 
 public class Ferrari implements Car  {
 	private String name;
+	private Engine engine;
 	
 	public Ferrari() {
 		System.out.println("No-arg constructor");
 	}
 	
+	public Ferrari(Engine engine) {
+		System.out.println("setting engine via constructor");
+		this.engine = engine;
+	}
+	
 	@Override
 	public void start() {
-		System.out.println("Ferrari - start()");
+		engine.start();
 	}
 
 	@Override
 	public void accelerate() {
-		System.out.println("Ferrari - accelerate()");
+		engine.rev();
+
 	}
 
 	@Override
 	public void stop() {
-		System.out.println("Ferrari - stop()");
+		engine.stop();
 	}
 
 	public String getName() {
@@ -31,5 +38,4 @@ public class Ferrari implements Car  {
 		this.name = name;
 	}
 	
-
 }
