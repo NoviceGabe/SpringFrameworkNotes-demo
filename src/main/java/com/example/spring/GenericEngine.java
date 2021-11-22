@@ -3,7 +3,7 @@ package com.example.spring;
 public class GenericEngine implements Engine {
 	
 	public GenericEngine() {
-		System.out.println("No-arg constructor");
+		System.out.println("GenericEngine No-arg constructor");
 	}
 
 	@Override
