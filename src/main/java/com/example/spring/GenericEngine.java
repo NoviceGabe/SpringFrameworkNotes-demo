@@ -1,6 +1,10 @@
 package com.example.spring;
 
 public class GenericEngine implements Engine {
+	
+	public Ferrari() {
+		System.out.println("No-arg constructor");
+	}
 
 	@Override
 	public void start() {
