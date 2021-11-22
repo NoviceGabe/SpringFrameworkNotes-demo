@@ -1,7 +1,9 @@
 package com.example.spring;
 
 public class FerrariEngine implements Engine {
-
+	public FerrariEngine() {
+		System.out.println("No-arg constructor");
+	}
 	@Override
 	public void start() {
 		System.out.println("Ferrari engine start");
