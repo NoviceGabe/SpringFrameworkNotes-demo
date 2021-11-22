@@ -2,7 +2,7 @@ package com.example.spring;
 
 public class GenericEngine implements Engine {
 	
-	public Ferrari() {
+	public GenericEngine() {
 		System.out.println("No-arg constructor");
 	}
 
