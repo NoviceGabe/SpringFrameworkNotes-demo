@@ -13,9 +13,12 @@
     	<constructor-arg ref="engine"></constructor-arg>
     </bean>
     
-     <bean id="engine" 
+     <!--bean id="engine" 
      class="com.example.spring.FerrariEngine">
+    </bean-->
+    
+     <bean id="engine" 
+     class="com.example.spring.GenericEngine">
     </bean>
-
-  
+    
 </beans>
